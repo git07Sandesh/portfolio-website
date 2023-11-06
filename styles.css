@@ -1,0 +1,230 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    
+    background-position: center;
+    background-size: auto;
+
+}
+body.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+body.light-mode {
+    background-color: #fff;
+    color: #333;
+}
+
+.dark-mode button,
+.light-mode button {
+    size: 18px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: inherit;
+}
+
+header {
+    background-color: #333333;
+    color: #fff;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.website_background{
+    width : 100%;
+    height:100%;
+    position:relative
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    color: aqua;
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+#myVideo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    min-width: 100%;
+    min-height: 100%;
+  }
+#darkModeVideo{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -2;
+    min-width: 100%;
+    min-height: 100%;
+}
+#lightModeVideo{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -2;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+
+a:link {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: pink;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  
+  a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    padding: 25px;
+   }
+   
+   .box {
+    width: 100%;
+    height: 100%; 
+    justify-content: center;
+    align-items: center;
+   }
+   
+   .box1 {
+    width: 50%;
+    height: 50%;
+   
+   }
+   
+   .box2 {
+    width: 50%;
+    height: 50%;
+   
+   }
+   .new_container {
+    display: flex;
+    flex-direction: row;
+    padding: 25px;
+
+   }
+   .new_box {
+    width: 100%;
+    height: 100%; 
+    justify-content: center;
+    align-items: center;
+    
+   }
+   .box3 {
+    width: 50%;
+    height: 50%;
+   }
+   .box4 {
+    width: 50%;
+    height: 50%;
+   }
+
+   
+.logo img {
+    max-width: 150px; /* Set your desired maximum width for the logo */
+    height: 70px;
+
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 2px 1px;
+    bottom: 0; /* Position the footer at the bottom of the viewport */
+    width: 100%; /* Make the footer take the full width of the viewport */
+
+}
+.contact {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style : italic;
+    color: rgb(20, 188, 191);
+
+}
+.contact a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+.contact img {
+    max-width: 40px; /* Set your desired maximum width for the social media icons */
+    height: auto;
+    margin-right: 10px; /* Adds spacing between the icons */
+}
+
+
+
+@media (max-width: 1000px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav {
+        margin-right: 10px;
+    }
+
+
+    .contact a {
+        margin: 10px 0;
+    }
+}
+@media (max-width: 480px) {
+    nav li {
+        margin-right: 10px;
+    }
+
+    .contact a {
+        margin: 10px 0;
+    }
+}
+
+body.dark-mode #lightModeVideo {
+    display: none;
+}
+
+body.dark-mode #darkModeVideo {
+    display: block;
+    z-index: -2;
+}
+
+body:not(.dark-mode) #darkModeVideo {
+    display: none;
+}
+
+body:not(.dark-mode) #lightModeVideo {
+    display: block;
+    z-index: -2;
+}

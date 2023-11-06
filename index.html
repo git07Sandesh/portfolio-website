@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Sandesh Bhattarai </title>
+    <link rel="icon" type="image/x-icon" href="file:///Users/sandeshbhattarai/Desktop/logo-color.png">
+    <script src="https://kit.fontawesome.com/8e7d824010.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="darkmode.css">
+</head>
+
+<body>
+<div class = "website_background">
+    <header>
+        <div class = "website_top"></div>
+            <div class="logo">
+                <img src="file:///Users/sandeshbhattarai/Desktop/logo-color.png" alt="Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="file:///Users/sandeshbhattarai/Desktop/Resume.pdf" target = "_blank">Resume</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </nav>
+            <div class = "mode">
+                <div class = "dark-mode">
+                    <button onclick="toggleDarkMode()">
+                        <i class="far fa-moon"></i>
+                    </button>
+                </div>
+                <div class = "light-mode">
+                    <button onclick="toggleLightMode()">
+                        <i class="fa-solid fa-sun"></i>
+                    </button>
+                </div>
+                <script>
+                    function toggleDarkMode() {
+                        var element = document.body;
+                        if (!element.classList.contains("dark-mode")) {
+                            element.classList.add("dark-mode");
+                            element.classList.remove("light-mode");
+                        }
+                    }
+                
+                    function toggleLightMode() {
+                        var element = document.body;
+                        if (!element.classList.contains("light-mode")) {
+                            element.classList.add("light-mode");
+                            element.classList.remove("dark-mode");
+                        }
+                    }
+                </script>
+            </div>
+       
+    </header>
+
+    <div id = "myVideo">
+        <video id="darkModeVideo" autoplay muted loop playsinline>
+            <source src="docs/dark.mp4" type="video/mp4">
+        </video>
+        
+        <video id="lightModeVideo" autoplay muted loop playsinline>
+            <source src="docs/light.mp4" type="video/mp4">
+    </div>
+
+
+    <div class = "container">
+        <div class = "box box1">
+            <h1>Introduction</h1>
+            <p> This paragraph will describe about myself</p>
+        </div>
+        <div class = "box box2">
+            <h1> Photoes</h1>
+            <p> Memorable pictures and videos</p>
+        </div>
+    </div>
+    <div class = "new_container">
+        <div class = "new_box box3">
+            <h1> Hobbies</h1>
+            <p> This is what I love to do</p>
+        </div>
+        <div class = "new_box box4">
+            <h1> My Projects and Awards</h1>
+            <p> This is what I have done and accomplished till now</p>
+        </div>
+    </div>
+    <div>
+        <h1>website
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+        </h1>
+    </div>
+    <div class="contact">
+            <h1>Contact me:</h1>
+            <a href="https://www.facebook.com/sandesh.bhattarai.14473/" target = "_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.linkedin.com/in/sandeshbhattarai07/" target = "_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/san_desh.7/" target = "_blank"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="mailto:sandesh.bhattarai@usm.edu" target = "_blank"><i class="fa-regular fa-envelope"></i></a>
+    </div>
+    <footer>
+           <h6>Developed and designed by Sandesh Bhattarai</h6>
+    </footer>
+</div>
+<script src="slideshow.js" defer></script>
+</body>
+
+</html>
