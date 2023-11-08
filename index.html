@@ -18,14 +18,28 @@
             <div class="logo">
                 <img src="docs/logo-color.png" alt="Logo">
             </div>
-            <nav>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#blog">Blog</a></li>
-                    <li><a href="file:///Users/sandeshbhattarai/Desktop/Resume.pdf" target = "_blank">Resume</a></li>
-                    <li><a href="#about">About</a></li>
-                </ul>
-            </nav>
+            <div class="menu-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <script>
+                const menuToggle = document.querySelector('.menu-toggle');
+                const menuItems = document.querySelector('.menu-items');
+
+                menuToggle.addEventListener('click', () => {
+                    menuItems.classList.toggle('active');
+                });
+            </script>
+            
+            <div class="menu-items">
+                <nav class="nav-list">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="file:///Users/sandeshbhattarai/Desktop/Resume.pdf" target="_blank">Resume</a></li>
+                    </ul>
+                </nav>
+            </div>
             <div class = "mode">
                 <div class = "dark-mode">
                     <button onclick="toggleDarkMode()">
@@ -66,69 +80,153 @@
         <video id="lightModeVideo" autoplay muted loop playsinline>
             <source src="docs/light.mp4" type="video/mp4">
     </div>
+    <div class = "intro">
+        <h1>Home</h1>
+        <h1>Hi All!</h1>
+        
+        <h2>It's me Sandesh Bhattarai</h2>
+
+        <h3>I am a <span class = "auto-type"></span></h3>
+    </div>
+    <div class ="about">
+        <h1>About</h1>
+        <p> I am a first-year undergraduate student at the University of Southern Mississippi, pursuing a major in Computer and Information Science. and minor in Mathematics, and 
+            Economic Data Analysis to enhance my skills and knowledge in these areas. My enthusiasm for technology and keen interest in the world of business fuels my ambition to become a technopreneur.
+        </p>
+        <list>
+        Age: 19
+        <br>
+        Location: Mississippi, USA
+        <br>
+        Nationality: Nepali
+        <br>
+        Human Languages: English, Nepali, Hindi, Espaniol(un poco)
+
+        </list>
 
 
+    </div>
+    <h2>Skills</h2>
     <div class = "container">
         <div class = "box box1">
-            <h1>Introduction</h1>
-            <p> This paragraph will describe about myself</p>
+            <h3>Languages</h3>
+            <br>
+            C
+            <br>
+            C++
+            <br>
+            Python
+            <br>
+            JavaScript
+            <br>
+            HTML
+            <br>
+            CSS
+            <br>
+            SQL
         </div>
         <div class = "box box2">
-            <h1> Photoes</h1>
-            <p> Memorable pictures and videos</p>
+            <h3> Database</h3>
+            <br>
+            MySQL
+            <br>
         </div>
     </div>
     <div class = "new_container">
         <div class = "new_box box3">
-            <h1> Hobbies</h1>
-            <p> This is what I love to do</p>
+            <h3> Other</h3>
+            <p> Photoshop</p>
+            <br>
+            Graphic Designing
+        
         </div>
         <div class = "new_box box4">
-            <h1> My Projects and Awards</h1>
-            <p> This is what I have done and accomplished till now</p>
+            <h3> Life Skills</h3>
+            Problem Solving
+            <br>
+            Team Work
+            <br>
+            Leadership
+            <br>
         </div>
     </div>
-    <div>
-        <h1>website
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
+    <div class = "edu">
+        <h2>Education</h2>
+        The University of Southern Mississippi
+        <br>
+        Kathmandu Model Secondary School
+        <br>
+        Fluorescent Secondary School 
+    </div>
+    <div class = "experi">
+        <h1> Experience</h1>
+        <p> I don't have real job experience in the field of computer science as I have just started to pursue my carreer.
+            However, I have always used my knowledge to solve real-life problems.
+        </p>
+        <p>
+            I worked as an event moderator in Mathematics Initiative in Nepal (An organization to boost the knowledge of mathematics among young minds of Nepal).
+            In my time with the organization, we moderated around 4 events that were quite sucessful. I learned a lot about team work, leadership and effective communication
+            skills during my time in this program.
+        </p>
+        <p>
+            Taking about business perspective, I used to help my parents in running our family business that focused on guest hospitality. I worked as grocery manager and used to
+            deal with local and wholesale vendors to find best deals for groceries and helped to make profits but cutting up the expense.
+            This act saw the profit to increase by almost 45% within 3 months.
+        </p>
+        <h3>Mathematics Initiatives in Nepal</h3>
+        Event moderator (August 2021- December 2022)  
+    </div>
 
-        </h1>
+    <div class = "Awards">
+        <h2>Awards and Achievements</h2>
+        Here will be some images of my unvaluable achievements.
+
+
     </div>
-    <div class="contact">
-            <h1>Contact me:</h1>
-            <a href="https://www.facebook.com/sandesh.bhattarai.14473/" target = "_blank"><i class="fa-brands fa-facebook"></i></a>
-            <a href="https://www.linkedin.com/in/sandeshbhattarai07/" target = "_blank"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="https://www.instagram.com/san_desh.7/" target = "_blank"><i class="fa-brands fa-square-instagram"></i></a>
-            <a href="mailto:sandesh.bhattarai@usm.edu" target = "_blank"><i class="fa-regular fa-envelope"></i></a>
+    <div class = "reference">
+        <h2>Testimonials</h2>
+        <p>LOR haru bata 2-3 line along with link to LOR</p>
     </div>
+    <button id="backToTopBtn"><i class="fa-solid fa-arrow-up"></i></button>
+    <script>
+        var backToTopBtn = document.getElementById("backToTopBtn");
+        window.onscroll = function() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                backToTopBtn.style.display = "block";
+            } else {
+                backToTopBtn.style.display = "none";
+            }
+        };
+        // When the user clicks on the button, scroll to the top of the document
+        backToTopBtn.addEventListener("click", function() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+        });
+    </script>
+    
+    
+    
+    
+    
+
     <footer>
            <h6>Developed and designed by Sandesh Bhattarai</h6>
+           <a href="https://www.facebook.com/sandesh.bhattarai.14473/" target = "_blank"><i class="fa-brands fa-facebook"></i></a>
+           <a href="https://www.linkedin.com/in/sandeshbhattarai07/" target = "_blank"><i class="fa-brands fa-linkedin"></i></a>
+           <a href="https://www.instagram.com/san_desh.7/" target = "_blank"><i class="fa-brands fa-square-instagram"></i></a>
+           <a href="mailto:sandesh.bhattarai@usm.edu" target = "_blank"><i class="fa-regular fa-envelope"></i></a>
     </footer>
 </div>
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 <script src="slideshow.js" defer></script>
+<script>
+    var typed = new Typed(".auto-type", {
+      strings: ["Student","Active Learner", "Coder"],
+      typeSpeed: 50,
+      backSpeed: 30,
+      loop: true
+       });
+  </script>
 </body>
 
 </html>

@@ -2,11 +2,13 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    
+    scroll-behavior: smooth;
+    overflow-y: scroll;
     background-position: center;
     background-size: auto;
 
 }
+
 body.dark-mode {
     background-color: #333;
     color: #fff;
@@ -15,7 +17,9 @@ body.light-mode {
     background-color: #fff;
     color: #333;
 }
-
+span.auto-type{
+    color: rgb(65, 28, 212);
+}
 .dark-mode button,
 .light-mode button {
     size: 18px;
@@ -39,6 +43,15 @@ header {
     height:100%;
     position:relative
 }
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+}
+.menu-items {
+    display: flex;
+    justify-content: flex-end;
+}
+
 nav ul {
     list-style: none;
     padding: 0;
@@ -78,6 +91,15 @@ nav ul li:last-child {
     min-width: 100%;
     min-height: 100%;
 }
+.intro,
+.about,
+.edu,
+.experi,
+.awards,
+.reference {
+    height: 100vh; /* Make each section take up full viewport height */
+    padding: 20px; /* Add padding for better readability */
+}
 
 
 a:link {
@@ -104,6 +126,13 @@ a:link {
     text-decoration: underline;
   }
 
+  .intro{
+    width:100%;
+    height:100%;
+    display: relative;
+    justify-content:center;
+    align-items:center;
+  }
   .container {
     display: flex;
     flex-direction: row;
@@ -154,9 +183,7 @@ a:link {
 .logo img {
     max-width: 150px; /* Set your desired maximum width for the logo */
     height: 70px;
-
 }
-
 
 footer {
     background-color: #333;
@@ -167,18 +194,13 @@ footer {
     width: 100%; /* Make the footer take the full width of the viewport */
 
 }
-.contact {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-style : italic;
-    color: rgb(20, 188, 191);
 
-}
-.contact a {
+footer a {
     color: #fff;
     text-decoration: none;
     margin: 0 10px;
 }
-.contact img {
+footer i {
     max-width: 40px; /* Set your desired maximum width for the social media icons */
     height: auto;
     margin-right: 10px; /* Adds spacing between the icons */
@@ -186,29 +208,38 @@ footer {
 
 
 
-@media (max-width: 1000px) {
-    header {
+@media (max-width: 768px) {
+    .website_top {
         flex-direction: column;
-        text-align: center;
+        text-align: relative;
     }
 
-    nav {
-        margin-right: 10px;
+    .menu-toggle {
+        display: block;
+    }
+    .menu-items {
+        display: none;
+    }
+    .menu-items.active {
+        display: block;
     }
 
 
-    .contact a {
-        margin: 10px 0;
+
+    .nav-list ul {
+        display: none;
     }
+
+    .nav-list.active ul {
+        display: flex;
+    }
+ 
 }
 @media (max-width: 480px) {
     nav li {
         margin-right: 10px;
     }
 
-    .contact a {
-        margin: 10px 0;
-    }
 }
 
 body.dark-mode #lightModeVideo {
@@ -227,4 +258,22 @@ body:not(.dark-mode) #darkModeVideo {
 body:not(.dark-mode) #lightModeVideo {
     display: block;
     z-index: -2;
+}
+#backToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 60%;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 18px;
+    z-index: 999;
+}
+
+#backToTopBtn:hover {
+    background-color: #0056b3;
 }
