@@ -6,52 +6,43 @@ body {
     overflow-y: scroll;
     background-position: center;
     background-size: auto;
-
+    background: linear-gradient(90deg, #fff, #333);
+        
 }
-
 body.dark-mode {
     background-color: #333;
+    background: linear-gradient(90deg, #333, #fff);
     color: #fff;
 }
 body.light-mode {
     background-color: #fff;
     color: #333;
 }
-span.auto-type{
-    color: rgb(65, 28, 212);
-}
-.dark-mode button,
-.light-mode button {
-    size: 18px;
-    background: none;
-    border: none;
-    cursor: pointer;
-    font-size: 18px;
-    color: inherit;
-}
-
-header {
-    background-color: #333333;
-    color: #fff;
-    padding: 15px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 .website_background{
     width : 100%;
     height:100%;
     position:relative
 }
-.menu-toggle {
-    display: none;
-    cursor: pointer;
+header {
+    background-color: #333333;
+    color: #fff;
+    padding: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top:0%;
+    width: 100%;
+    z-index: 999;
+}
+.logo img {
+    max-width: 150px; /* Set your desired maximum width for the logo */
+    height: 70px;
 }
 .menu-items {
     display: flex;
     justify-content: flex-end;
 }
-
 nav ul {
     list-style: none;
     padding: 0;
@@ -67,41 +58,6 @@ nav ul li {
 nav ul li:last-child {
     margin-right: 0;
 }
-#myVideo {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-    min-width: 100%;
-    min-height: 100%;
-  }
-#darkModeVideo{
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    z-index: -2;
-    min-width: 100%;
-    min-height: 100%;
-}
-#lightModeVideo{
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    z-index: -2;
-    min-width: 100%;
-    min-height: 100%;
-}
-.intro,
-.about,
-.edu,
-.experi,
-.awards,
-.reference {
-    height: 100vh; /* Make each section take up full viewport height */
-    padding: 20px; /* Add padding for better readability */
-}
-
-
 a:link {
     color: green;
     background-color: transparent;
@@ -126,13 +82,39 @@ a:link {
     text-decoration: underline;
   }
 
-  .intro{
-    width:100%;
-    height:100%;
-    display: relative;
-    justify-content:center;
-    align-items:center;
-  }
+.dark-mode button,
+.light-mode button {
+    background-color: #555;
+    size: 18px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: inherit;
+    padding: 10px 20px;
+}
+.light-mode:hover,
+.dark-mode:hover {
+    background-color: #777;
+}
+
+
+
+.home,
+.about,
+.skills,
+.edu,
+.experi,
+.awards {
+    height: 100vh; /* Make each section take up full viewport height */
+    padding: 20px; /* Add padding for better readability */
+    padding-top: 70px;
+}
+span.auto-type{
+    color: rgb(65, 28, 212);
+}
+
+
   .container {
     display: flex;
     flex-direction: row;
@@ -180,9 +162,23 @@ a:link {
    }
 
    
-.logo img {
-    max-width: 150px; /* Set your desired maximum width for the logo */
-    height: 70px;
+   #backToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #222;
+    color: #fff;
+    border: none;
+    border-radius: 60%;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 18px;
+    z-index: 999;
+}
+
+#backToTopBtn:hover {
+    background-color: #0056b3;
 }
 
 footer {
@@ -242,38 +238,3 @@ footer i {
 
 }
 
-body.dark-mode #lightModeVideo {
-    display: none;
-}
-
-body.dark-mode #darkModeVideo {
-    display: block;
-    z-index: -2;
-}
-
-body:not(.dark-mode) #darkModeVideo {
-    display: none;
-}
-
-body:not(.dark-mode) #lightModeVideo {
-    display: block;
-    z-index: -2;
-}
-#backToTopBtn {
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 60%;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-size: 18px;
-    z-index: 999;
-}
-
-#backToTopBtn:hover {
-    background-color: #0056b3;
-}
