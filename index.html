@@ -10,208 +10,430 @@
     <link rel="icon" type="image/x-icon" href="./docs/logo-color.png">
     <script src="https://kit.fontawesome.com/8e7d824010.js" crossorigin="anonymous"></script>
 </head>
+<!--Body of the webpage-->
+    <body>
+        <header class = "header" id = "header">
+            <nav class="nav container">
+                <a href = "#" class="nav_logo"> Sandesh </a>
 
-<body>
-    <div class = "website_background">
-    <header>
-        <div class = "website_top"></div>
-            <div class="logo">
-                <img src="docs/logo-color.png" alt="Logo">
-            </div>
-     
-            <div class="menu-items">
-                <nav class="nav-list">
 
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#skills">Skills</a></li>
-                        <li><a href="#education">Education</a></li>
-                        <li><a href="#experience">Experience</a></li>
-                        <li><a href="#awards">Awards</a></li>
-                        <li><a href="file:///Users/sandeshbhattarai/Desktop/Resume.pdf" target="_blank">Resume</a></li>
+                <div class="nav_menu" id = "nav-menu">     
+                    <ul class = "nav_list grid">
+                        <li class = "nav_item">
+                            <a href="#home" class = "nav_link active-link">
+                                <i class="fa-solid fa-house nav_icon"></i>Home
+                            </a>
+                        </li>
+                        <li class = "nav_item">
+                            <a href="#about" class = "nav_link">
+                                <i class="fa-solid fa-user nav_icon"></i>About
+                            </a>
+                        </li>
+                        <li class = "nav_item">
+                            <a href="#skills" class = "nav_link">
+                                <i class="fa-solid fa-folder-open nav_icon"></i>Skills
+                            </a>
+                        </li>
+                        <li class = "nav_item">
+                            <a href="#education" class = "nav_link">
+                                <i class="fa-solid fa-pencil nav_icon"></i>Education
+                            </a>
+                        </li>
+                        <li class = "nav_item">
+                            <a href="#experience" class = "nav_link">
+                                <i class="fa-solid fa-briefcase nav_icon"></i>Experience
+                            </a>
+                        </li>
+                        <li class = "nav_item">
+                            <a href="docs/Resume.pdf" target="_blank">Resume
+                                <i class="fa-solid fa-file"></i>
+                            </a>
+                        </li>
                     </ul>
-                </nav>
-            </div>
-            
-            <div class = "mode">
-                <div class = "dark-mode">
-                    <button onclick="toggleDarkMode()">
-                        <i class="far fa-moon"></i>
-                    </button>
+                    <i class = "fa fa-times nav_close" id = "nav-close"></i>
                 </div>
-                <div class = "light-mode">
-                    <button onclick="toggleLightMode()">
-                        <i class="fa-solid fa-sun"></i>
-                    </button>
-                </div>
-                <script>
-                    function toggleDarkMode() {
-                        var element = document.body;
-                        if (!element.classList.contains("dark-mode")) {
-                            element.classList.add("dark-mode");
-                            element.classList.remove("light-mode");
-                        }
-                    }
-                
-                    function toggleLightMode() {
-                        var element = document.body;
-                        if (!element.classList.contains("light-mode")) {
-                            element.classList.add("light-mode");
-                            element.classList.remove("dark-mode");
-                        }
-                    }
-                </script>
-            </div>
-       
-    </header>
-    
-    <div class="home" id="home">
-        <h1>Home</h1>
-        <h1>Hi All!</h1>
+                    <div class="nav_btns">
+<!--                        Theme change button             -->
+                        <i class="fa-solid fa-moon change-theme" id = "theme-button"></i>
+                        <div class="nav_toggle" id = "nav-toggle">
+                            <i class = "fa fa-bars"></i>
+                        </div>
+                    </div>
+            </nav>
+        </header>
+
+
         
-        <h2>It's me Sandesh Bhattarai</h2>
-
-        <h3>I am a <span class = "auto-type"></span></h3>
-    </div>
-    <div class="about" id="about">
-        <h1>About</h1>
-        <p> I am a first-year undergraduate student at the University of Southern Mississippi, pursuing a major in Computer and Information Science. and minor in Mathematics, and 
-            Economic Data Analysis to enhance my skills and knowledge in these areas. My enthusiasm for technology and keen interest in the world of business fuels my ambition to become a technopreneur.
-        </p>
-        <list>
-        Age: 19
-        <br>
-        Location: Mississippi, USA
-        <br>
-        Nationality: Nepali
-        <br>
-        Human Languages: English, Nepali, Hindi, Espaniol(un poco)
-
-        </list>
-
-
-    </div>
-    <div class = "skills" id = "skills">
-        <h2>Skills</h2>
-        <div class="container" >
-            <div class = "box box1">
-                <h3>Languages</h3>
-                <br>
-                C
-                <br>
-                C++
-                <br>
-                Python
-                <br>
-                JavaScript
-                <br>
-                HTML
-                <br>
-                CSS
-                <br>
-                SQL
+    <main class="main">
+        <section class="home section" id="home">
+            <div class="home_container container grid">
+                <div class="home_content grid">
+                    <div class="home_social">
+                        <a href="https://www.linkedin.com/in/sandeshbhattarai07/" target = "_blank" class ="home_social-icon">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                        <a href= "https://github.com/git07Sandesh/sandeshbhattarai.github.io" target = "_blank" class ="home_social-icon">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="mailto:sandesh.bhattarai@usm.edu" target = "_blank" class ="home_social-icon">
+                            <i class="fa-regular fa-envelope"></i>
+                        </a>
+                    </div>
+                    <div class="home_img">
+                        <svg class="home_blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <mask id="mask0" mask-type="alpha">
+                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+                                130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+                                97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+                                0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                            </mask>
+                            <g mask="url(#mask0)">
+                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                                165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+                                129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                                -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                                <image class= "home_blob-img" x = '12' y = '18' xlink:href="docs/logo-color.png"/>
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="home_data">
+                        <h1 class="home_title">Hi, I am Sandesh</h1>
+                        <h3 class="home_subtitle">I am a <span class = "auto-type"></span></h3>
+                        <p class="home_description">\\ SOmething like this:- A passionate developer with experience in web development and mobile app development.\\</p>
+                        <a href = "#contact" class = "button button--flex">
+                            Put me in your contact list!<i class="fa-solid fa-address-book button_icon"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="home_scroll">
+                    <a href="#about" class="home_scroll-button button--flex">
+                        <i class="fa-solid fa-scroll home_scroll-mouse" ></i>
+                        <span class="home_scroll-name">Scroll down</span>
+                        <i class="fa-solid fa-arrow-down-wide-short home_scroll-arrow"></i>
+                    </a>
+                </div>
             </div>
-            <div class = "box box2">
-                <h3> Database</h3>
-                <br>
-                MySQL
-                <br>
+        </section>
+
+        <section class="about section" id="about">
+            <h2 class="section_title">About Me</h2>
+            <span class="section_subtitle">My Introduction</span>
+
+            <div class="about_container container grid">
+                <!--Neeed to add image--><img>
+                <div class="about_data">
+                    <p class="about_description">I am a first-year undergraduate student at the University of Southern Mississippi, pursuing a major in Computer and Information Science
+                        and minor in Mathematics, and Economic Data Analysis to enhance my skills and knowledge in these areas. My enthusiasm for technology and keen interest in the world
+                        of business fuels my ambition to become a technopreneur.
+                    </p>
+                    <div class="about_info">
+
+                        <div>
+                            <span class="about_info-title">15+</span>
+                            <span class="about_info-name">Years<br>of education</span>
+                        </div>
+
+                        <div>
+                            <span class="about_info-title">03+</span>
+                            <span class="about_info-name">Years<br>experience</span>
+                        </div>
+
+                        <div>
+                            <span class="about_info-title">05</span>
+                            <span class="about_info-name">Projects<br>Initiated</span>
+                        </div>
+                    </div>
+
+                    <div class="about_buttons">
+                        <a download= "" href= "file:///Users/sandeshbhattarai/Desktop/Resume.pdf" class="button button--flex">
+                            Download Resume<i class="fa-solid fa-download button_icon"></i>
+                        </a>
+                    </div>
+                </div>
+
             </div>
+
+        </section>
+
+        <section class="skills section" id="skills">
+            <h2 class="section_title">Skills</h2>
+            <span class="section_subtitle">My technical level</span>
+
+            <div class="skills_container container grid">
+                <div>
+                    <div class="skills_content skills_open">
+                        <div class="skills_header">
+                            <i class="fa-solid fa-code skills_icon"></i>
+                            
+                            <div>
+                                <h1 class="skills_title">FrontEnd Developer</h1>
+                                <span class="skills_subtitle">More than 2 years</span>
+
+                            </div>
+                            <i class="fa-solid fa-arrow-down-long skills_arrow"></i>
+                        </div>
+                        <div class="skills_list grid">
+                            <div class="skills_data">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name">HTML</h3>
+                                    <span class="skills_number">80%</span>
+                                </div>
+                                <div class="skills_bar">
+                                    <span class="skills_percentage skills_html"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills_data">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name">CSS</h3>
+                                    <span class="skills_number">75%</span>
+                                </div>
+                                <div class="skills_bar">
+                                    <span class="skills_percentage skills_css"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills_data">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name">JavaScript</h3>
+                                    <span class="skills_number">70%</span>
+                                </div>
+                                <div class="skills_bar">
+                                    <span class="skills_percentage skills_js"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills_data">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name">React</h3>
+                                    <span class="skills_number">60%</span>
+                                </div>
+                                <div class="skills_bar">
+                                    <span class="skills_percentage skills_react"></span>
+                                </div>
+                            </div>
+                                
+                        </div>
+                    </div>
+                    <div class="skills_content skills_close">
+                        <div class="skills_header">
+                            <i class="fa-solid fa-code skills_icon"></i>
+                            
+                            <div>
+                                <h1 class="skills_titles">BackEnd Developer</h1>
+                                <span class="skills_subtitle">More than 4 years</span>
+
+                            </div>
+                            <i class="fa-solid fa-arrow-down-long skills_arrow"></i>
+                        </div>
+                        <div class="skills_list grid">
+                            <div class="skills_data">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name">C/C++</h3>
+                                    <span class="skills_number">90%</span>
+                                </div>
+                                <div class="skills_bar">
+                                    <span class="skills_percentage skills_c"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills_data">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name">PHP</h3>
+                                    <span class="skills_number">75%</span>
+                                </div>
+                                <div class="skills_bar">
+                                    <span class="skills_percentage skills_php"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills_data">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name">Node JS</h3>
+                                    <span class="skills_number">40%</span>
+                                </div>
+                                <div class="skills_bar">
+                                    <span class="skills_percentage skills_node"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills_data">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name">MySQL</h3>
+                                    <span class="skills_number">55%</span>
+                                </div>
+                                <div class="skills_bar">
+                                    <span class="skills_percentage skills_sql"></span>
+                                </div>
+                            </div>
+                                
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="qualification section">
+            <h2 class="section_title">Qualification</h2>
+            <span class="section_subtitle">My educational journey</span>
+
+            <div class="qualification_container container">
+                <div class="qualification_tabs">
+                    <div class="qualification_button button--flex qualification_active" data-target = '#education'>
+                        <i class="fa-solid fa-graduation-cap qualification_icon"></i>
+                        Education
+                    </div>
+                    <div class="qualification_button button--flex" data-target="#experience">
+                        <i class="fa-solid fa-briefcase qualification_icon"></i>
+                        Experience
+                    </div>
+                </div>
+
+                <div class="qualification_sections">
+
+                    <div class="qualification_content qualification_active" data-content id="education">
+
+
+                        <div class="qualification_data">
+                            <div>
+                                <h3 class="qualification_title">Bachelor in Computer and Information Science</h3>
+                                <span class="qualification_subtitle">USA - USM</span>
+                                <div class="qualification_calendar">
+                                    <i class="fa-solid fa-calendar-days"></i>
+                                    2023 - present
+                                </div>
+                            </div>
+                            <div>
+                                <span class="qualification_rounder"></span>
+                                <span class="qualification_line"></span>
+                            </div>
+                        </div>
+
+                        <div class="qualification_data">
+                        <div> </div>
+                            <div>
+                                <span class="qualification_rounder"></span>
+                                <span class="qualification_line"></span>
+                            </div>
+                            <div>
+                                <h3 class="qualification_title">High School</h3>
+                                <span class="qualification_subtitle">Nepal - KMC</span>
+                                <div class="qualification_calendar">
+                                    <i class="fa-solid fa-calendar-days"></i>
+                                    2021 - 2023
+                                </div>
+                            </div>
+                        </div>
+
+                <!--To add more qualification content, follow the same format. ie. next one will have span section at bottom and another will have span at top.-->
+                </div>
+
+    <!--To add more qualification content, follow the same format. ie. next one will have span section at bottom and another will have span at top.-->
+                    <div class="qualification_content" data-content id="experience">
+
+                    <div class="qualification_data">
+                        <div>
+                            <h3 class="qualification_title">Freelancer</h3>
+                            <span class="qualification_subtitle">Coder, Developer<br>USA</span>
+                            <div class="qualification_calendar">
+                                <i class="fa-solid fa-calendar-days"></i>
+                                2023 - present
+                            </div>
+                        </div>
+                        <div>
+                            <span class="qualification_rounder"></span>
+                            <span class="qualification_line"></span>
+                        </div>
+                    </div>
+
+                    <div class="qualification_data">
+                        <div> </div>
+                        <div>
+                            <span class="qualification_rounder"></span>
+                            <span class="qualification_line"></span>
+                        </div>
+                        <div>
+                            <h3 class="qualification_title">Mathematics Initiative in Nepal</h3>
+                            <span class="qualification_subtitle">Nepal</span>
+                            <div class="qualification_calendar">
+                                <i class="fa-solid fa-calendar-days"></i>
+                                2022 - 2023
+                            </div>
+                        </div>
+                    </div>
+                    <div class="qualification_data">
+                        <div>
+                            <h3 class="qualification_title">Student</h3>
+                            <span class="qualification_subtitle">Nepal</span>
+                            <div class="qualification_calendar">
+                                <i class="fa-solid fa-calendar-days"></i>
+                                2011 - 2023
+                            </div>
+                        </div>
+                        <div>
+                            <span class="qualification_rounder"></span>
+                            <span class="qualification_line"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="project section">
+            <div class="project_bg">
+                <div class="project_container container grid">
+                    <div class="project_data">
+                        <h2 class="project_title">Do you have new ideas</h2>
+                        <p class="project_description">Contact me and let's collab</p>
+                        <a href="#contact" class="button button--flex button--white">
+                            Contact Me 
+                            <i class="fa-solid fa-address-book button_icon"></i>
+                        </a>
+                    </div>
+                    <img src="" alt="Photo" class="project_img">
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer_bg">
+            <div class="footer_container container grid">
+                <div>
+                    <h1 class="footer_title">Sandesh</h1>
+                    <span class="footer_subtitle">Coder</span>
+                </div>
+                <ul class="footer_links">
+                    <li>
+                        <a href="#skills" class="footer_link">Skills</a>
+                    </li>
+                    <li>
+                        <a href="docs/Resume.pdf" class="footer_link">Resume</a>
+                    </li>
+                </ul>
+
+                <div class="footer_socials">
+                   <a href="https://github.com/git07Sandesh" target="_blank" class="footer_social">
+                        <i class="fa-brands fa-github"></i>
+                   </a>
+                   <a href="https://www.linkedin.com/in/sandeshbhattarai07/" target="_blank" class="footer_social">
+                        <i class="fa-brands fa-linkedin"></i>
+                   </a>
+                   <a href="https://www.instagram.com/san_desh.7/" target="_blank" class="footer_social">
+                        <i class="fa-brands fa-instagram"></i>
+                   </a>
+                </div>
+            </div>
+
+
+            <p class="footer_copy">&#169; Sandesh. All right reserved</p>
         </div>
-        <div class = "new_container">
-            <div class = "new_box box3">
-                <h3> Other</h3>
-                <p> Photoshop</p>
-                <br>
-                Graphic Designing
-            
-            </div>
-            <div class = "new_box box4">
-                <h3> Life Skills</h3>
-                Problem Solving
-                <br>
-                Team Work
-                <br>
-                Leadership
-                <br>
-            </div>
-        </div>
-    </div>
-    <div class="edu" id="education">
-        <h2>Education</h2>
-        The University of Southern Mississippi
-        <br>
-        Kathmandu Model Secondary School
-        <br>
-        Fluorescent Secondary School 
-    </div>
-    <div class="experi" id="experience">
-        <h1> Experience</h1>
-        <p> I don't have real job experience in the field of computer science as I have just started to pursue my carreer.
-            However, I have always used my knowledge to solve real-life problems.
-        </p>
-        <p>
-            I worked as an event moderator in Mathematics Initiative in Nepal (An organization to boost the knowledge of mathematics among young minds of Nepal).
-            In my time with the organization, we moderated around 4 events that were quite sucessful. I learned a lot about team work, leadership and effective communication
-            skills during my time in this program.
-        </p>
-        <p>
-            Taking about business perspective, I used to help my parents in running our family business that focused on guest hospitality. I worked as grocery manager and used to
-            deal with local and wholesale vendors to find best deals for groceries and helped to make profits but cutting up the expense.
-            This act saw the profit to increase by almost 45% within 3 months.
-        </p>
-        <h3>Mathematics Initiatives in Nepal</h3>
-        Event moderator (August 2021- December 2022)  
-    </div>
-
-    <div class="awards" id="awards">
-        <h2>Awards and Achievements</h2>
-        Here will be some images of my unvaluable achievements.
-
-        <h2>Testimonials</h2>
-        <p>LOR haru bata 2-3 line along with link to LOR</p>
-    </div>
-    <button id="backToTopBtn"><i class="fa-solid fa-arrow-up"></i></button>
-    <script>
-        var backToTopBtn = document.getElementById("backToTopBtn");
-        window.onscroll = function() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                backToTopBtn.style.display = "block";
-            } else {
-                backToTopBtn.style.display = "none";
-            }
-        };
-        // When the user clicks on the button, scroll to the top of the document
-        backToTopBtn.addEventListener("click", function() {
-            document.body.scrollTop = 0; // For Safari
-            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
-        });
-    </script>
-    
-    
-    
-    
-    
-
-    <footer>
-           <h6>Developed and designed by Sandesh Bhattarai</h6>
-           <a href="https://www.facebook.com/sandesh.bhattarai.14473/" target = "_blank"><i class="fa-brands fa-facebook"></i></a>
-           <a href="https://www.linkedin.com/in/sandeshbhattarai07/" target = "_blank"><i class="fa-brands fa-linkedin"></i></a>
-           <a href="https://www.instagram.com/san_desh.7/" target = "_blank"><i class="fa-brands fa-square-instagram"></i></a>
-           <a href="mailto:sandesh.bhattarai@usm.edu" target = "_blank"><i class="fa-regular fa-envelope"></i></a>
     </footer>
-</div>
+
+    <button id="backToTopBtn"><i class="fa-solid fa-arrow-up"></i></button> 
+
 <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 <script src="slideshow.js" defer></script>
-<script>
-    var typed = new Typed(".auto-type", {
-      strings: ["Student","Active Learner", "Coder"],
-      typeSpeed: 50,
-      backSpeed: 30,
-      loop: true
-       });
-  </script>
+
 
 </body>
 
